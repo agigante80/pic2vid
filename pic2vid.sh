@@ -300,6 +300,11 @@ for meta in "${METADATA[@]}"; do
     METADATA_ARGS+=("-metadata" "$meta")
 done
 
+# Add automatic metadata if no metadata was specified
+if [ ${#METADATA[@]} -eq 0 ]; then
+    METADATA_ARGS+=("-metadata" "comment=Made with pic2vid - https://github.com/agigante80/pic2vid")
+fi
+
 if [ "$FORMAT" = "gif" ]; then
     # Create GIF from segments
     # Use palette for better quality GIF

@@ -91,6 +91,8 @@ while [[ $# -gt 0 ]]; do
             echo "  $0 -s mtime -d 2 *.jpg"
             echo "  $0 -f gif -d 2 -o animation.gif *.jpg"
             echo "  $0 -m title=\"Vacation 2025\" -m artist=\"John\" -d 3 *.jpg"
+            echo ""
+            echo "For more information and examples, visit: https://github.com/agigante80/pic2vid"
             exit 0
             ;;
         *)

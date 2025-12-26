@@ -11,7 +11,7 @@
 
 ### Video (MP4)
 ```bash
-../../pic2vid.sh -s name -d 1 1 2 \
+../../pic2vid.sh -s name -d 2 2 3 \
   -m title="You really know how to shock me with..." \
   -m artist="Loof & Timmy" \
   -m date="2025-12-19" \
@@ -20,22 +20,22 @@
   *.jpg
 ```
 
-**Output:** [shock_me.mp4](shock_me.mp4) - 62KB, 4 seconds
+**Output:** [shock_me.mp4](shock_me.mp4) - 70KB, 7 seconds
 
 ### Animated GIF
 ```bash
-../../pic2vid.sh -f gif -s name -d 1 1 2 \
+../../pic2vid.sh -f gif -s name -d 2 2 3 \
   -o shock_me.gif \
   *.jpg
 ```
 
-**Output:** [shock_me.gif](shock_me.gif) - 228KB, 4 seconds
+**Output:** [shock_me.gif](shock_me.gif) - 281KB, 7 seconds
 
 *Note: GIF format does not support embedded metadata.*
 
 ## Configuration
 
 - **Sorting:** Alphabetically by filename
-- **Duration:** 1s, 1s, 2s per frame
-- **Total Duration:** 4 seconds
+- **Duration:** 2s, 2s, 3s per frame
+- **Total Duration:** 7 seconds
 - **Format:** 576x720 (adaptive to largest image)

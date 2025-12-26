@@ -249,6 +249,90 @@ GIFs are inherently larger than videos. Consider:
 - Using fewer images
 - Switching to MP4 format for better compression
 
+## Examples
+
+The repository includes several example projects demonstrating different use cases and configurations:
+
+### Comic Strip Examples
+
+#### [Loof & Timmy - Flower](examples/loofandtimmy/flower/)
+A cute comic about finding flowers in unexpected places.
+- **Format:** MP4 (59KB) & GIF (241KB)
+- **Duration:** 2s per frame, 6s total
+- **Sorting:** Alphabetical by filename (`-s name`)
+- **Artist:** [@loofandtimmy](https://www.instagram.com/loofandtimmy/)
+
+```bash
+./pic2vid.sh -s name -d 2 -o flower.mp4 \
+  -m title="You gotta stop putting flowers everywhere" \
+  -m artist="Loof & Timmy" \
+  examples/loofandtimmy/flower/*.jpg
+```
+
+#### [Loof & Timmy - Shock Me](examples/loofandtimmy/shock_me/)
+A humorous take on modern relationships and charging cables.
+- **Format:** MP4 (70KB) & GIF (281KB)
+- **Duration:** 2s, 2s, 3s per frame, 7s total
+- **Sorting:** Alphabetical by filename (`-s name`)
+- **Artist:** [@loofandtimmy](https://www.instagram.com/loofandtimmy/)
+
+```bash
+./pic2vid.sh -s name -d 2 2 3 -o shock_me.mp4 \
+  -m title="You really know how to shock me with..." \
+  -m artist="Loof & Timmy" \
+  examples/loofandtimmy/shock_me/*.jpg
+```
+
+#### [Loof & Timmy - Far Apart](examples/loofandtimmy/far_apart/)
+A heartwarming story about long-distance relationships.
+- **Format:** MP4 (96KB) & GIF (392KB)
+- **Duration:** 2s per frame, 10s total
+- **Sorting:** Alphabetical by filename (`-s name`)
+- **Artist:** [@loofandtimmy](https://www.instagram.com/loofandtimmy/)
+
+```bash
+./pic2vid.sh -s name -d 2 -o far_apart.mp4 \
+  -m title="When you're far apart" \
+  -m artist="Loof & Timmy" \
+  examples/loofandtimmy/far_apart/*.jpg
+```
+
+### Art Examples
+
+#### [Irregular Galaxy Doods - Graveyard](examples/irregulargalaxydoods/graveyard/)
+Abstract artistic interpretation with creative imagery.
+- **Format:** MP4 (59KB) & GIF (237KB)
+- **Duration:** 2s per frame, 8s total
+- **Sorting:** Alphabetical by filename (`-s name`)
+- **Artist:** [@irregulargalaxydoods](https://www.instagram.com/irregulargalaxydoods/)
+
+```bash
+./pic2vid.sh -s name -d 2 -o graveyard.mp4 \
+  -m title="Graveyard" \
+  -m artist="Irregular Galaxy Doods" \
+  examples/irregulargalaxydoods/graveyard/*.jpg
+```
+
+#### [Irregular Galaxy Doods - This Year](examples/irregulargalaxydoods/thisyear/)
+Reflective artistic piece celebrating the year.
+- **Format:** MP4 (137KB) & GIF (602KB)
+- **Duration:** 2s per frame, 18s total
+- **Sorting:** Alphabetical by filename (`-s name`)
+- **Artist:** [@irregulargalaxydoods](https://www.instagram.com/irregulargalaxydoods/)
+
+```bash
+./pic2vid.sh -s name -d 2 -o thisyear.mp4 \
+  -m title="This Year" \
+  -m artist="Irregular Galaxy Doods" \
+  examples/irregulargalaxydoods/thisyear/*.jpg
+```
+
+Each example folder contains:
+- Source images
+- Generated MP4 and GIF files
+- README with the exact commands used
+- Metadata and attribution information
+
 ## License
 
 This project is released into the public domain. Feel free to use, modify, and distribute as needed.
